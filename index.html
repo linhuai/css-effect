@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrap{
+			position: fixed;
+			top:0;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			background-color: #feeeee
+		}
+		.left,.right{
+			flex: 1;
+		}
+		.left:hover{
+			z-index: 2;
+			background-image: linear-gradient(rgba(34, 45, 77, .97), rgba(34, 45, 77, .97)), url('./left.png');
+		}
+		.right:hover{
+			z-index: 2;
+			background-image: linear-gradient(rgba(34, 45, 77, .97), rgba(34, 45, 77, .97)), url('./right.jpg');
+		}
+		.box{
+			position: fixed;
+			z-index: 1;
+			top:50%;
+			left: 50%;
+			height: 400px;
+			width: 400px;
+			margin-top: -200px;
+			background-color: red;
+			margin-left: -200px;
+		}
+	</style>
+</head>
+<body>
+  <div class="wrap">
+  	<div class="left">
+			<div class="box"></div>
+		</div>
+  	<div class="right">
+			<div class="box"></div>
+		</div>
+  	<div class="box"></div>
+</body>
+</html>
